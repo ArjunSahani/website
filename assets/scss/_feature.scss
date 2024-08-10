@@ -1,0 +1,41 @@
+.archf-feature-section {
+	padding: 115px 0px;
+	overflow: visible;
+	.side-vector-1 {
+		right: 0;
+		top: -380px;
+		z-index: -1;
+	}
+	.side-vector-2 {
+		left: 0;
+		z-index: -1;
+		bottom: -240px;
+	}
+}
+.archf-feature-text {
+	max-width: 465px;
+}
+.archf-feature-list-item {
+	padding: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #ccd0d9;
+	transition: 700ms all;
+	.archf-feature-list-icon {
+		margin-right: 30px;
+	}
+	.archf-feature-list-text {
+		overflow: hidden;
+		h3 {
+			color: #000000;
+			font-size: 24px;
+			font-weight: 700;
+			padding-bottom: 25px;
+		}
+	}
+	&:hover {
+		transform: translateX(40px);
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,107 @@
+.archf-footer-section {
+	padding-top: 50px;
+}
+.archf-footer-widget {
+	color: #fff;
+	.widget-title {
+		color: #fff;
+		font-size: 21px;
+		font-weight: 700;
+		padding: 95px 0px 25px;
+	}
+	.archf-footer-about-widget {
+		top: -50px;
+		color: #fff;
+		padding: 50px;
+		position: relative;
+		margin-bottom: -50px;
+		background-color: $base-color;
+		.footer-logo {
+			margin-bottom: 35px;
+		}
+		p {
+			padding-bottom: 25px;
+		}
+		.contact-icon-text {
+			margin-bottom: 10px;
+			.w-contact-icon {
+				margin-right: 10px;
+			}
+			.w-contact-text {
+				overflow: hidden;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.archf-footer-menu-widget {
+		padding-left: 50px;
+		li {
+			color: #fff;
+			margin-bottom: 20px;
+			a {
+				&:hover {
+					padding-left: 5px;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.archf-footer-nl-widget {
+		p {
+			padding-bottom: 30px;
+		}
+		form {
+			position: relative;
+		}
+		input {
+			width: 100%;
+			height: 55px;
+			padding-left: 20px;
+			border: 1px solid #909a9c;
+			background-color: transparent;
+			&::placeholder {
+				color: #fff;
+			}
+		}
+		button {
+			top: 12px;
+			right: 15px;
+			padding: 0;
+			border: none;
+			color: #909a9c;
+			font-size: 20px;
+			position: absolute;
+			background-color: transparent;
+		}
+	}
+}
+.archf-copyright-content {
+	color: #fff;
+	padding: 40px 0px 35px;
+	.copyright-text {
+		a {
+			font-weight: 700;
+		}
+	}
+	.copyright-social {
+		a {
+			margin: 0px 5px;
+			&:hover {
+				color: $base-color;
+			}
+		}
+	}
+	.copyright-menu {
+		text-align: right;
+		li {
+			margin-left: 40px;
+			&:nth-child(1){
+				margin-left: 0;
+			}
+		}
+	}
+}

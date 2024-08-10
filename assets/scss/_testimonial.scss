@@ -1,0 +1,182 @@
+@keyframes floating {
+	from {
+		-webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		-moz-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		-ms-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		-o-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		transform: rotate(0deg) translate(-10px) rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		-moz-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		-ms-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		-o-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		transform: rotate(360deg) translate(-10px) rotate(-360deg)
+	}
+}
+@-webkit-keyframes floating {
+	from {
+		-webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		-moz-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		-ms-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		-o-transform: rotate(0deg) translate(-10px) rotate(0deg);
+		transform: rotate(0deg) translate(-10px) rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		-moz-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		-ms-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		-o-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+		transform: rotate(360deg) translate(-10px) rotate(-360deg)
+	}
+}
+.archf-testimonial-section {
+	overflow: visible;
+	padding: 125px 0px;
+	background-attachment: fixed;
+	.testimonial-shape1 {
+		left: 80px;
+		bottom: 100px;
+	}
+	.testimonial-shape2 {
+		top: 20%;
+		right: 5%;
+	}
+}
+.testimonial-carousel-indicator {
+	.carousel-indicators {
+		position: static;
+		margin: 0;
+		display: inherit;
+		z-index: 5;
+	}
+	.carousel-indicators li::before,
+	.carousel-indicators li::after {
+		display: none;
+	}
+	.carousel-indicators li {
+		margin: 0;
+		bottom: auto;
+		text-indent: 0;
+		overflow: hidden;
+		z-index: 4;
+		cursor: pointer;
+		border-radius: 100%;
+		position: absolute;
+		animation-name: floating;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		transform-origin: 50% 1px;
+		transition: all 2s ease;
+		&:nth-child(1) {
+			top: -40px;
+			left: 100px;
+			animation-duration: 7s;
+			transition-delay: 0.7s
+		}
+		&:nth-child(1),
+		&:nth-child(4)  {
+			width: 120px;
+			height: 120px;
+		}
+		&:nth-child(2){
+			top: 150px;
+			left: 15%;
+			animation-duration: 5s;
+			transition-delay: 0.1s;
+		}
+		&:nth-child(2),
+		&:nth-child(8) {
+			width: 80px;
+			height: 80px;
+		}
+		&:nth-child(3) {
+			left: 12%;
+			width: 55px;
+			height: 55px;
+			bottom: 20px;
+			animation-duration: 8s;
+			transition-delay: 0.3s;
+		}
+		&:nth-child(4) {
+			left: 70px;
+			bottom: -160px;
+			animation-duration: 8s;
+			transition-delay: 0.4s;
+		}
+		&:nth-child(5) {
+			top: -150px;
+			width: 95px;
+			right: 90px;
+			height: 95px;
+			animation-duration: 7s;
+			transition-delay: 0.7s
+		}
+		&:nth-child(6) {
+			top: 20px;
+			right: 20%;
+			width: 60px;
+			height: 60px;
+			animation-duration: 5s;
+			transition-delay: 0.1s;
+		}
+		&:nth-child(7) {
+			top: 50%;
+			right: 10%;
+			width: 105px;
+			height: 105px;
+			animation-duration: 8s;
+			transition-delay: 0.3s;
+		}
+		&:nth-child(8) {
+			right: 23%;
+			bottom: -145px;
+			animation-duration: 8s;
+			transition-delay: 0.4s;
+		}
+	}
+}
+.archf-testimonial-inner-wrap {
+	color: #fff;
+	margin: 0 auto;
+	max-width: 770px;
+	.archf-testimonial-top {
+		margin-bottom: 30px;
+		i {
+			font-size: 60px;
+		}
+		h3 {
+			color: #fff;
+			font-size: 48px;
+			font-weight: 700;
+			font-style: italic;
+			padding-top: 55px;
+		}
+	}
+	p {
+		font-size: 21px;
+		font-style: italic;
+		margin-bottom: 0;
+		padding-bottom: 50px;
+	}
+	.archf-test-name-degi {
+		margin: 0 auto;
+		max-width: 260px;
+		.archf-testi-img {
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			margin-right: 20px;
+			border-radius: 100%;
+		}
+		.archf-testi-name-degi {
+			text-align: left;
+			padding-top: 5px;
+			h4 {
+				font-weight: 700;
+				font-size: 21px;
+				padding-bottom: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.archf-about-section {
+	padding: 80px 0px 90px;
+	.archf-about-bg {
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+}
+.archf-about-text {
+	padding-left: 100px;
+}
+.archf-btn {
+	height: 55px;
+	width: 170px;
+	line-height: 55px;
+	background-color: #5a606c;
+	a {
+		color: #fff;
+		width: 100%;
+		display: block;
+		font-weight: 700;
+		font-family: $heading;
+	}
+}
+.archf-about-text-area {
+	p {
+		padding-bottom: 22px;
+	}
+	li {
+		font-weight: 500;
+		padding-left: 25px;
+		margin-bottom: 10px;
+		position: relative;
+		&:before {
+			top: 0;
+			left: 0;
+			content: '\f013';
+			font-weight: 900;
+			position: absolute;
+			color: $base-color;
+			font-family: 'Font Awesome 5 Free';
+		}
+	}
+	.archf-btn {
+		margin-top: 28px;
+	}
+}

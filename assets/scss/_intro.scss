@@ -1,0 +1,49 @@
+.archf-intro-section {
+	padding: 115px 0px 75px;
+}
+.archf-intro-content {
+	padding-top: 65px;
+}
+.archf-intro-innerbox {
+	.archf-intro-img {
+		overflow: hidden;
+		img {
+			transition: 500ms all;
+		}
+	}
+	.archf-intro-text-icon {
+		top: -35px;
+		max-width: 330px;
+		background-color: #fff; 
+		padding: 60px 0px 0px 40px;
+	}
+	.archf-intro-icon {
+		top: -45px;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		background-color: #5a606c;
+		transition: 500ms all;
+	}
+	.archf-intro-text {
+		h3 {
+			color: #000;
+			font-size: 24px;
+			font-weight: 700;
+			padding-bottom: 20px;
+			&:hover {
+				color: $base-color;
+			}
+		}
+	}
+	&:hover {
+		.archf-intro-icon {
+			background-color: $base-color;
+		}
+		.archf-intro-img {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
