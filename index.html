@@ -360,59 +360,135 @@
 <!-- End of feature section
 	============================================= -->
 
+
+
+
+
+
+
 <!-- Start of achievement section
 	============================================= -->
+	
 	<section id="archf-project" class="archf-project-section">
 		<div class="archf-section-title-1 text-center headline pera-content">
 			<h3>We Are Trean</h3>
 			<h2>Our Achievements</h2>
 			<p>Petatem accusant ium dolo usmod tempor incidid inim veniam amito prostu nim veniam, quis nostrud exercitation ullamco laboris</p>
 		</div>
-		<div class="archf-project-content">
-			<div class="archf-project-slider">
-				<div class="archf-project-img-text position-relative">
-					<div class="archf-project-img">
-						<img src="assets/img/pr1.jpg" alt="">
+
+			<div class="slider-container">
+				<div class="slider">
+					<!-- Slider items here -->
+					<div class="archf-project-img-text position-relative">
+						<div class="archf-project-img">
+							<img src="assets/img/demo.png" alt="">
+						</div>
+						<div class="archf-project-text headline pera-content">
+							<h4><a href="#">How We Works</a></h4>
+							<h3><a href="#">Architecture is our passion</a></h3>
+							<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
+						</div>
 					</div>
-					<div class="archf-project-text headline pera-content">
-						<h4><a href="#">How We Works</a></h4>
-						<h3><a href="#">Architecture is our passion</a></h3>
-						<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
+					<!-- Repeat slider items as needed -->
+					 <!-- Slider items here -->
+					<div class="archf-project-img-text position-relative">
+						<div class="archf-project-img">
+							<img src="assets/img/demo.png" alt="">
+						</div>
+						<div class="archf-project-text headline pera-content">
+							<h4><a href="#">How We Works</a></h4>
+							<h3><a href="#">Architecture is our passion</a></h3>
+							<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
+						</div>
 					</div>
-					<div class="archf-project-more">
-						<a href="#">Full Story <i class="fas fa-arrow-right"></i></a>
+					<!-- Repeat slider items as needed -->
+					 <!-- Slider items here -->
+					<div class="archf-project-img-text position-relative">
+						<div class="archf-project-img">
+							<img src="assets/img/demo.png" alt="">
+						</div>
+						<div class="archf-project-text headline pera-content">
+							<h4><a href="#">How We Works</a></h4>
+							<h3><a href="#">Architecture is our passion</a></h3>
+							<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
+						</div>
 					</div>
+					<!-- Repeat slider items as needed -->
+					 <!-- Slider items here -->
+					<div class="archf-project-img-text position-relative">
+						<div class="archf-project-img">
+							<img src="assets/img/demo.png" alt="">
+						</div>
+						<div class="archf-project-text headline pera-content">
+							<h4><a href="#">How We Works</a></h4>
+							<h3><a href="#">Architecture is our passion</a></h3>
+							<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
+						</div>
+					</div>
+					<!-- Repeat slider items as needed -->
+					 <!-- Slider items here -->
+					<div class="archf-project-img-text position-relative">
+						<div class="archf-project-img">
+							<img src="assets/img/demo.png" alt="">
+						</div>
+						<div class="archf-project-text headline pera-content">
+							<h4><a href="#">How We Works</a></h4>
+							<h3><a href="#">Architecture is our passion</a></h3>
+							<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
+						</div>
+					</div>
+					<!-- Repeat slider items as needed -->
 				</div>
-				<div class="archf-project-img-text position-relative">
-					<div class="archf-project-img">
-						<img src="assets/img/pr1.jpg" alt="">
-					</div>
-					<div class="archf-project-text headline pera-content">
-						<h4><a href="#">How We Works</a></h4>
-						<h3><a href="#">Architecture is our passion</a></h3>
-						<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
-					</div>
-					<div class="archf-project-more">
-						<a href="#">Full Story <i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-				<div class="archf-project-img-text position-relative">
-					<div class="archf-project-img">
-						<img src="assets/img/pr1.jpg" alt="">
-					</div>
-					<div class="archf-project-text headline pera-content">
-						<h4><a href="#">How We Works</a></h4>
-						<h3><a href="#">Architecture is our passion</a></h3>
-						<p>Duis aute irure dolor in reprehenderit in volup tate velit esgse cillum dolore when them usic ofer eu fugiat.</p>
-					</div>
-					<div class="archf-project-more">
-						<a href="#">Full Story <i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
 			</div>
-		</div>
-	</section>
-<!-- End of project section
+		</section>
+		
+		<script>
+			let currentSlide = 0; // Start from the first slide (index 0)
+			const slides = document.querySelectorAll('.archf-project-img-text');
+			const totalSlides = slides.length;
+			const slider = document.querySelector('.slider');
+			
+			function showSlide(index) {
+				if (index >= totalSlides) {
+					currentSlide = 0;
+				} else if (index < 0) {
+					currentSlide = totalSlides - 1;
+				} else {
+					currentSlide = index;
+				}
+				slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+			}
+			
+			// Initial call to show the first slide
+			showSlide(currentSlide);
+			
+			function moveSlide(step) {
+				showSlide(currentSlide + step);
+			}
+			
+			// Auto-slide functionality
+			const autoSlideInterval = 3000; // Time in milliseconds (3 seconds)
+			let slideInterval = setInterval(() => moveSlide(1), autoSlideInterval);
+			
+			// Optional: Clear interval when user interacts with manual controls
+			document.querySelector('.prev').addEventListener('click', () => {
+				clearInterval(slideInterval);
+				moveSlide(-1);
+				slideInterval = setInterval(() => moveSlide(1), autoSlideInterval);
+			});
+			
+			document.querySelector('.next').addEventListener('click', () => {
+				clearInterval(slideInterval);
+				moveSlide(1);
+				slideInterval = setInterval(() => moveSlide(1), autoSlideInterval);
+			});
+			</script>
+			
+
+
+<!-- End of achievement section section
 	============================================= -->
 
 	

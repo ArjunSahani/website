@@ -881,7 +881,7 @@ select:visited {
 /*---------------------------------------------------- */
 /*(5)- project area*/
 /*----------------------------------------------------*/
-.archf-project-content {
+ .archf-project-content {
   margin: 0 auto;
   padding-top: 70px;
   max-width: 1920px;
@@ -891,9 +891,9 @@ select:visited {
   top: 0px;
   left: 0px;
   z-index: 1;
-  width: 100%;
+  width: 50%;
   opacity: 0;
-  height: 100%;
+  height: 50%;
   content: "";
   visibility: hidden;
   position: absolute;
@@ -974,10 +974,50 @@ select:visited {
   visibility: visible;
 }
 
-.archf-project-slider .owl-dots {
-  margin-top: 60px;
-  text-align: center;
+
+
+
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 45vh;
 }
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.archf-project-img-text {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 
 /*---------------------------------------------------- */
 /*(6)- Service area*/
@@ -1937,6 +1977,7 @@ select:visited {
     transform: translateX(-100%);
   }
 }
+
 .logos {
   overflow: hidden;
   padding: 60px 0;
@@ -1984,7 +2025,8 @@ select:visited {
 
 
 .loop > h2 {
-
+  position: relative;
+  z-index: 10;
   color: #fff;
   font-size: 25px;
   display: inline-block;
@@ -1993,3 +2035,4 @@ select:visited {
   padding: 5px 15px 5px;
   background-color: #8a2be2;
 }
+
