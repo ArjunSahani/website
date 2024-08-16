@@ -886,6 +886,7 @@ select:visited {
   margin: 0 auto;
   padding-top: 70px;
   max-width: 1920px;
+ 
 }
 
 .archf-project-img-text:before {
@@ -986,6 +987,7 @@ select:visited {
   position: relative;
   overflow: hidden;
   height: 45vh;
+  z-index: 2;
 }
 
 .slider {
