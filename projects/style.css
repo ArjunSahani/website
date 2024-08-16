@@ -1,0 +1,473 @@
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.clearfix:after, #header:after, #header .header-holder:after, #nav:after, .main-slider .slide .caption:after, .main-slider .slide .btn-holder:after, .service-sec:after, .project-sec:after, .help-sec:after, .shop-list .drop-down:after, .shop-list .shop:after, .shop-detail .shop:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden;
+}
+
+/*------------------------------------------------------------------
+2. Body / body
+-------------------------------------------------------------------*/
+
+
+a:hover, a:focus, a.active {
+  text-decoration: none;
+  outline: none;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.bg-full {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.bg-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.pad-t {
+  padding-top: 72px;
+}
+
+.box-shadow {
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.md-round {
+  border-radius: 5px;
+}
+
+.lg-round {
+  border-radius: 40px;
+}
+
+.bg-light-grey {
+  background: #fbfbfb;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.js-tab-hidden {
+  display: block !important;
+  left: -9999px !important;
+  position: absolute !important;
+  top: -9999px !important;
+}
+
+
+/*------------------------------------------------------------------
+18. Project Sec / .project-sec
+-------------------------------------------------------------------*/
+.project-sec {
+  min-height: 536px;
+}
+
+.project-sec.style2 {
+  min-height: inherit;
+  padding: 92px 0 71px;
+}
+
+.project-sec.style2 .main-heading {
+  margin: 0 0 51px;
+}
+
+.project-sec.style3 {
+  min-height: inherit;
+  padding: 58px 0 0;
+}
+
+.project-sec.style3 .main-heading {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.project-sec.style3 .main-heading:before {
+  display: none;
+}
+
+.project-sec.style3 .filter-list {
+  float: right;
+  padding: 12px 0 0;
+  margin: 0 0 72px;
+}
+
+.project-sec.style3 .filter-list li {
+  margin: 0 0 0 60px;
+}
+
+.project-sec.style3 .project-holder .col {
+  width: 25%;
+  margin: 0;
+}
+
+.project-sec.style3 .project-holder .col img {
+  width: 100%;
+}
+
+.project-sec.style4 {
+  padding: 92px 0 71px;
+  min-height: inherit;
+}
+
+.project-sec.style4 .project-holder .col {
+  width: 25%;
+  margin: 0;
+}
+
+.project-sec.style4 .project-holder .col img {
+  width: 100%;
+}
+
+.project-sec .col {
+  width: 25%;
+  float: left;
+  overflow: hidden;
+}
+
+.project-sec .col.overlay:before {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.25s linear;
+}
+
+.project-sec .col:hover img {
+  transform: scale(1.1);
+}
+
+.project-sec .col:hover.overlay:before {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.project-sec .col:hover .over {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-sec .col:hover .over .title,
+.project-sec .col:hover .over .sub-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-sec .col img {
+  transition: all 0.25s linear;
+}
+
+.project-sec .col .over {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  width: 100%;
+  transition: all 0.25s linear;
+}
+
+.project-sec .col .over .title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #111;
+  display: block;
+  margin: 0 0 5px;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: all 0.25s linear;
+}
+
+.project-sec .col .over .title a {
+  color: #111;
+  transition: all 0.25s linear;
+}
+
+.project-sec .col .over .title a:hover {
+  color: #fff;
+}
+
+.project-sec .col .over .sub-title {
+  font-size: 16px;
+  line-height: 18px;
+  color: #111;
+  font-weight: 400;
+  display: block;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.25s linear;
+}
+
+.project-sec .filter-list {
+  font-size: 16px;
+  line-height: 18px;
+  color: #b7b7b7;
+  font-weight: 600;
+  overflow: hidden;
+  margin: 0 0 63px;
+}
+
+.project-sec .filter-list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 60px 0 0;
+  text-transform: uppercase;
+}
+
+.project-sec .filter-list .active a {
+  color: #111;
+}
+
+.project-sec .filter-list a {
+  color: #b7b7b7;
+  display: block;
+  transition: all 0.25s linear;
+}
+
+.project-sec .filter-list a:hover {
+  color: #111;
+}
+
+.project-sec .project-holder .col {
+  width: 365px;
+  margin: 0 25px 29px 0;
+  overflow: hidden;
+}
+
+.project-sec .project-holder .col.col2 {
+  margin: 0 0 29px;
+}
+
+.project-sec .read-more {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 28px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: underline;
+  transition: all 0.25s linear;
+}
+
+.project-sec .read-more:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------
+19. Project Detail / .project-detail
+-------------------------------------------------------------------*/
+.project-detail {
+  overflow: hidden;
+  padding-top: 95px;
+  padding-bottom: 90px;
+}
+
+.project-detail.style2 {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.project-detail.style2 .project-list {
+  border: none;
+  margin: 0 0 83px;
+}
+
+.project-detail.style2 .project-list li {
+  width: 100%;
+  float: none;
+}
+
+.project-detail.style2 .img-holder {
+  margin: 0 0 55px;
+}
+
+.project-detail.style2 h3 {
+  margin: 0 0 27px;
+}
+
+.project-detail.style2 .pagination {
+  padding: 26px 0 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+.project-detail.style2 p {
+  margin: 0 0 22px;
+}
+
+.project-detail h3 {
+  font-size: 24px;
+  line-height: 26px;
+  color: #111;
+  font-weight: 700;
+  margin: 0 0 35px;
+}
+
+.project-detail h4 {
+  font-size: 24px;
+  line-height: 26px;
+  color: #111;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.project-detail .project-list {
+  overflow: hidden;
+  margin: 0 0 57px;
+  padding: 0 0 36px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.project-detail .project-list li {
+  width: 33.33%;
+  float: left;
+  margin: 0 0 17px;
+  color: #555;
+}
+
+.project-detail .project-list strong {
+  font-weight: 700;
+  color: #111;
+}
+
+.project-detail p {
+  margin: 0 0 56px;
+}
+
+.project-detail .img-holder {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+
+.project-detail .img-holder .img-col {
+  width: 31.13%;
+  margin: 0 0 0 30px;
+  float: left;
+  overflow: hidden;
+}
+
+.project-detail .img-holder .img-col:first-child {
+  margin: 0;
+  width: 31.6%;
+}
+
+.project-detail .img-holder .img-col.overlay:before {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.25s linear;
+}
+
+.project-detail .img-holder .img-col:hover img {
+  transform: scale(1.1);
+}
+
+.project-detail .img-holder .img-col:hover.overlay:before {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.project-detail .img-holder .img-col:hover .ti-zoom-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-detail .img-holder .img-col img {
+  transition: all 0.25s linear;
+}
+
+.project-detail .img-holder .img-col .ti-zoom-in {
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s linear;
+}
+
+.project-detail .pagination {
+  overflow: hidden;
+  padding: 67px 0 0;
+}
+
+.project-detail .pagination .prev {
+  font-size: 14px;
+  line-height: 16px;
+  color: #555;
+  float: left;
+  padding: 4px 0 0;
+  text-decoration: underline;
+  transition: all 0.25s linear;
+}
+
+.project-detail .pagination .prev:hover {
+  text-decoration: none;
+}
+
+.project-detail .pagination .next {
+  font-size: 14px;
+  line-height: 16px;
+  color: #555;
+  float: right;
+  padding: 4px 0 0;
+  text-decoration: underline;
+  transition: all 0.25s linear;
+}
+
+.project-detail .pagination .next:hover {
+  text-decoration: none;
+}
+
+.project-detail .pagination .ti-layout-grid2 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #555;
+  transition: all 0.25s linear;
+}

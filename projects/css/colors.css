@@ -1,0 +1,6 @@
+
+
+.team-sec .team:hover .over,
+.project-sec .col.overlay:before {
+  background: rgba(169, 83, 255, 0.75);
+}
