@@ -220,18 +220,18 @@ a:hover, a:focus, a.active {
 }
 
 .project-sec .col .over .title a {
-  color: #111;
+  color: #ffffff;
   transition: all 0.25s linear;
 }
 
 .project-sec .col .over .title a:hover {
-  color: #fff;
+  color: #dbdbdb;
 }
 
 .project-sec .col .over .sub-title {
   font-size: 16px;
   line-height: 18px;
-  color: #111;
+  color: #ffffff;
   font-weight: 400;
   display: block;
   opacity: 0;
