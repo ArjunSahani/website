@@ -9,6 +9,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="/pages/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/pages/assets/css/jquery-ui.css">
 	<link rel="stylesheet" href="/pages/assets/css/flaticon.css">
@@ -20,6 +21,7 @@
 	<link rel="stylesheet" href="/pages/assets/css/video.min.css">
 	<link rel="stylesheet" href="/pages/assets/css/style.css">
 	<!-- include the site stylesheet -->
+
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<!-- include the site stylesheet -->
@@ -149,16 +151,24 @@
 	
 <main>
 
-	
-			<!-- project detail of the page -->
-			<section class="project-detail style2 container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="img-holder">
-							<img src="http://placehold.it/1170x600" alt="image description" class="img-responsive">
-						</div>
-					</div>
+	<section class="project-detail style2 container">
+		<div class="row">
+		  <div class="col-xs-12">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="/projects/img/slider/air1.jpg" alt="image description" class="img-responsive"></div>
+					<div class="swiper-slide"><img src="/projects/img/slider/air2.jpg" alt="image description" class="img-responsive"></div>
+					<div class="swiper-slide"><img src="/projects/img/slider/air3.jpg" alt="image description" class="img-responsive"></div>
 				</div>
+				<!-- Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Navigation buttons -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		  </div>
+		</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-4">
 						<h3>Project Details</h3>
@@ -180,7 +190,28 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        effect: 'fade',
+    });
+});
 
+		  </script>
+		  
 
 <!-- Start of footer  section
 	============================================= -->		
@@ -265,6 +296,7 @@
 
 
 	<!-- For Js Library-->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="/pages/assets/js/jquery.min.js"></script>
 	<script src="/pages/assets/js/jquery-ui.min.js"></script>
 	<script src="/pages/assets/js/bootstrap.min.js"></script>
