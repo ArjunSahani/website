@@ -1,38 +1,38 @@
 const projects = [
     {
-        title: "Project 1",
+        title: "Equipment 1",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 1."
+        description: "This is a description of Equipment 1."
     },
     {
-        title: "Project 2",
+        title: "Equipment 2",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 2."
+        description: "This is a description of Equipment 2."
     },
     {
-        title: "Project 3",
+        title: "Equipment 3",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 3."
+        description: "This is a description of Equipment 3."
     },
     {
-        title: "Project 4",
+        title: "Equipment 4",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 4."
+        description: "This is a description of Equipment 4."
     },
     {
-        title: "Project 4",
+        title: "Equipment 4",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 4."
+        description: "This is a description of Equipment 4."
     },
     {
-        title: "Project 4",
+        title: "Equipment 4",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 4."
+        description: "This is a description of Equipment 4."
     },
     {
-        title: "Project 4",
+        title: "Equipment 4",
         image: "https://via.placeholder.com/300",
-        description: "This is a description of Project 4."
+        description: "This is a description of Equipment 4."
     },
 
 ];

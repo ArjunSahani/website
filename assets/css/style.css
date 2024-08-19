@@ -1192,6 +1192,7 @@ select:visited {
   visibility: visible;
 }
 
+
 /*---------------------------------------------------- */
 /*(8)- testimonial area*/
 /*----------------------------------------------------*/
@@ -1231,8 +1232,9 @@ select:visited {
 
 .archf-testimonial-section {
   overflow: visible;
-  padding: 125px 0px;
+  padding: 0px 0px;
   background-attachment: fixed;
+  padding-bottom: 25px;
   margin-bottom: 25px;
 }
 .archf-testimonial-section .testimonial-shape1 {
@@ -1413,6 +1415,7 @@ select:visited {
   font-size: 21px;
   padding-bottom: 5px;
 }
+
 
 
 /*---------------------------------------------------- */
@@ -2039,3 +2042,89 @@ select:visited {
   background-color: #8a2be2;
 }
 
+/* --------------------------------- */
+.test{
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8a2be2;;
+  margin-bottom: 20px;
+}
+.testimonials {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.testimonials .wrapper {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.wrapper .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.wrapper .section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.wrapper .testimonial-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info .name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.info .job {
+  text-transform: capitalize;
+}
+
+.testimonial-item p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.testimonial-item .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: goldenrod;
+}
+
+.testimonials .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background: #fff;
+}
