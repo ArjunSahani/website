@@ -2575,7 +2575,7 @@ select:visited {
     background-image: url(../img/banner/srbg.png); }
 
 /*Service Page (Servcie Section)*/
-/*----------------------------------------------------*/
+/*----------------------------------------------------
 .service-page-section {
   padding: 120px 0px 90px; }
 
@@ -2653,7 +2653,71 @@ select:visited {
       background-color: #ffffff; }
       .service-price-section .service-price-tab-btn .nav-tabs .nav-link.active {
         background-color: #8a2be2;
-        color: #ffffff; }
+        color: #ffffff; } */
+
+
+
+        /* Service Page Section */
+
+        /* Service Page Section */
+.service-page-section {
+  padding: 120px 0 90px;
+  background-color: #f9f9f9;
+}
+
+.service-page-content .service-content-2 .service-inner-box {
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.service-page-content .service-content-2 .service-inner-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-page-content .service-content-2 .service-inner-box img {
+  max-width: 60%; /* Reduce the image size */
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.service-page-content .service-content-2 .service-inner-box .service-serial-number {
+  font-size: 26px; /* Increase serial number size */
+  font-weight: bold;
+  color: #8a2be2;
+  margin-bottom: 10px;
+}
+
+.service-page-content .service-content-2 .service-inner-box .service-text h3 a {
+  font-size: 22px; /* Increase heading size */
+  font-weight: 800;
+  color: #333;
+  text-decoration: none;
+}
+
+.service-page-content .service-content-2 .service-inner-box .service-text h3 a:hover {
+  color: #8a2be2;
+}
+
+.service-page-content .service-content-2 .service-inner-box .service-text p {
+  font-size: 16px; /* Increase paragraph text size */
+  color: #444; /* Slightly darker for readability */
+  margin-top: 10px;
+  line-height: 1.6; /* Better line spacing */
+}
+
+        
+
+
+
+
 
 /*---------------------------------------------------- */
 /*(12)- Team area*/
