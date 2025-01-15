@@ -2713,10 +2713,63 @@ select:visited {
   line-height: 1.6; /* Better line spacing */
 }
 
-        
+
+/*---------------------------------------------------- */
+/*---------------------------------------------------- */
+/*---------------------------------------------------- */
+
+.eqp-page-section {
+  padding: 120px 0 90px;
+  background-color: #f9f9f9;
+}
+
+.eqp-page-content .eqp-content-2 .eqp-inner-box {
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.eqp-page-content .eqp-content-2 .eqp-inner-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.eqp-page-content .eqp-content-2 .eqp-inner-box img {
+  max-width: 750%; /* Reduce the image size */
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-serial-number {
+  font-size: 26px; /* Increase serial number size */
+  font-weight: bold;
+  color: #8a2be2;
+  margin-bottom: 10px;
+}
+
+.eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text h3 a {
+  font-size: 22px; /* Increase heading size */
+  font-weight: 800;
+  color: #333;
+  text-decoration: none;
+}
+
+.eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text h3 a:hover {
+  color: #8a2be2;
+}
 
 
 
+
+
+/*---------------------------------------------------- */
+/*---------------------------------------------------- */
 
 
 /*---------------------------------------------------- */
