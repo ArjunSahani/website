@@ -15,6 +15,7 @@ CSS Table of content:-
 10. Core Feature Area
 11. Blog Area
 12. Team Area
+    Equipment Area
 13. Testimonial Area
 14. Newslatter Area
 15. Counter Area
@@ -2734,63 +2735,181 @@ select:visited {
 
 
 /*---------------------------------------------------- */
-/*---------------------------------------------------- */
-/*---------------------------------------------------- */
-
-.eqp-page-section {
-  padding: 100px 0px 100px;
-  z-index: 1; 
-  background-color: #f9f9f9;
-}
-
-.eqp-page-content .eqp-content-2 .eqp-inner-box {
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-}
-
-.eqp-page-content .eqp-content-2 .eqp-inner-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.eqp-page-content .eqp-content-2 .eqp-inner-box img {
-  max-width: 95%; /* Reduce the image size */
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-.eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-serial-number {
-  font-size: 26px; /* Increase serial number size */
-  font-weight: bold;
-  color: #8a2be2;
-  margin-bottom: 10px;
-}
-
-.eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text h3 a {
-  font-size: 22px; /* Increase heading size */
-  font-weight: 800;
-  color: #333;
-  text-decoration: none;
-}
-
-.eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text h3 a:hover {
-  color: #8a2be2;
-}
-
-
-
-
-
-/*---------------------------------------------------- */
+/* Equipment area*/
 /*---------------------------------------------------- */
 
+.eqp-section {
+  padding: 115px 0px 115px;
+  z-index: 1; }
+  .eqp-section:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(white), to(#bbbbbb));
+    background-image: -webkit-linear-gradient(left, white 0%, #bbbbbb 100%);
+    background-image: -o-linear-gradient(left, white 0%, #bbbbbb 100%);
+    background-image: linear-gradient(90deg, white 0%, #bbbbbb); }
+  .eqp-section .section-title .title-water-print {
+    -webkit-text-stroke-color: #ededed; }
+  .eqp-section .eqp-content {
+    padding-top: 60px; }
+    .eqp-section .eqp-content .col-lg-4:nth-child(2) .eqp-inner-box {
+      background-color: #0e0019; }
+      .eqp-section .eqp-content .col-lg-4:nth-child(2) .eqp-inner-box .eqp-text h3, .eqp-section .eqp-content .col-lg-4:nth-child(2) .eqp-inner-box .eqp-text p {
+        color: #ffffff; }
+    .eqp-section .eqp-content .col-lg-4:nth-child(3) .eqp-inner-box {
+      background-color: #bb98ff; }
+      .eqp-section .eqp-content .col-lg-4:nth-child(3) .eqp-inner-box .eqp-serial-number {
+        -webkit-text-stroke-color: #ffffff; }
+      .eqp-section .eqp-content .col-lg-4:nth-child(3) .eqp-inner-box .eqp-text h3, .eqp-section .eqp-content .col-lg-4:nth-child(3) .eqp-inner-box p,
+      .eqp-section .eqp-content .col-lg-4:nth-child(3) .eqp-inner-box .eqp-icon i {
+        color: #ffffff; }
+      .eqp-section .eqp-content .col-lg-4:nth-child(3) .eqp-inner-box:after {
+        background-color: #0e0019; }
+
+.eqp-inner-box {
+  padding: 48px 40px;
+  background-color: #ffffff;
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(50, 50, 50, 0.04);
+  box-shadow: 0px 8px 16px 0px rgba(50, 50, 50, 0.04); }
+  .eqp-inner-box .eqp-serial-number {
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-family: "space-grotesk";
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b1b1b1; }
+  .eqp-inner-box .eqp-text {
+    margin-bottom: 35px; }
+    .eqp-inner-box .eqp-text h3 {
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 20px; }
+  .eqp-inner-box .eqp-icon {
+    line-height: 1; }
+    .eqp-inner-box .eqp-icon i {
+      font-size: 70px;
+      color: #bb98ff; }
+  .eqp-inner-box:after {
+    bottom: 0;
+    width: 0%;
+    left: 0;
+    height: 4px;
+    content: '';
+    position: absolute;
+    -webkit-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+    background-color: #bb98ff; }
+  .eqp-inner-box:hover {
+    margin-top: -20px; }
+    .eqp-inner-box:hover:after {
+      width: 100%; }
+
+      .eqp-section-2 {
+        z-index: 1;
+        top: -85px;
+        overflow: visible; }
+      
+      .eqp-content-2 .eqp-inner-box .eqp-icon i {
+        color: #0e0019; }
+      
+      .eqp-content-2 .eqp-inner-box .eqp-text h3, .eqp-content-2 .eqp-inner-box p,
+      .eqp-content-2 .eqp-inner-box .eqp-icon i {
+        -webkit-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out; }
+      
+      .eqp-content-2 .eqp-inner-box .eqp-text h3 a {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; }
+      
+      .eqp-content-2 .eqp-inner-box:hover {
+        background-color: #0e0019; }
+        .eqp-content-2 .eqp-inner-box:hover:after {
+          display: none; }
+        .eqp-content-2 .eqp-inner-box:hover .eqp-text h3, .eqp-content-2 .eqp-inner-box:hover p,
+        .eqp-content-2 .eqp-inner-box:hover .eqp-icon i {
+          color: #ffffff; }
+      
+      .eqp-content-2 .col-lg-4:nth-child(3) .eqp-inner-box {
+        z-index: 1; }
+        .eqp-content-2 .col-lg-4:nth-child(3) .eqp-inner-box:before {
+          top: 0;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: .05;
+          position: absolute;
+          background-size: cover;
+          background-image: url(../img/banner/srbg.png); }
+      
+      .eqp-page-section {
+        padding: 120px 0 90px;
+        background-color: #f9f9f9;
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box img {
+        max-width: 100%; /* Reduce the image size */
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-serial-number {
+        font-size: 26px; /* Increase serial number size */
+        font-weight: bold;
+        color: #8a2be2;
+        margin-bottom: 10px;
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text h3 a {
+        font-size: 22px; /* Increase heading size */
+        font-weight: 800;
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text h3 a:hover {
+        color: #8a2be2;
+      }
+      
+      .eqp-page-content .eqp-content-2 .eqp-inner-box .eqp-text p {
+        font-size: 16px; /* Increase paragraph text size */
+        color: #444; /* Slightly darker for readability */
+        margin-top: 10px;
+        line-height: 1.6; /* Better line spacing */
+      }
+/*---------------------------------------------------- */
+/*end Equipment area*/
 
 /*---------------------------------------------------- */
 /*(12)- Team area*/
