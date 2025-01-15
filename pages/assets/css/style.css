@@ -837,8 +837,113 @@ select:visited {
         font-weight: 700;
         padding-bottom: 5px; }
 
-/*Home page 2 (About)*/
 /*----------------------------------------------------*/
+.about-section-2 {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.about-section-2 .about-left-img {
+  text-align: center;
+}
+
+.about-section-2 .about-left-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section-2 .about-left-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-section-2 .about-right-text {
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section-2 .section-title {
+  margin-bottom: 10px;
+}
+
+.about-section-2 .title-tag {
+  font-size: 26px;
+  font-weight: 500;
+  color: #8a2be2;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative; 
+  
+}
+
+.about-section-2 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.about-section-2 .title-text-details {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.about-section-2 .title-text-details br {
+  display: block;
+  margin: 15px 0;
+}
+
+/* Hover effects for the text section */
+.about-section-2 .about-right-text:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-section-2 {
+    padding: 70px 20px;
+  }
+
+  .about-section-2 .about-left-img img {
+    max-width: 100%;
+  }
+
+  .about-section-2 .about-right-text {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-section-2 h2 {
+    font-size: 28px;
+  }
+
+  .about-section-2 .title-text-details {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section-2 h2 {
+    font-size: 24px;
+  }
+
+  .about-section-2 .title-text-details {
+    font-size: 12px;
+  }
+}
+
+        
+
+/*Home page 2 (About)*/
+/*----------------------------------------------------
 .about-section-2 {
   padding: 120px 0px 110px; }
 
@@ -2574,92 +2679,6 @@ select:visited {
     background-size: cover;
     background-image: url(../img/banner/srbg.png); }
 
-/*Service Page (Servcie Section)*/
-/*----------------------------------------------------
-.service-page-section {
-  padding: 120px 0px 90px; }
-
-.service-page-content .service-content-2 .service-inner-box {
-  padding: 55px 40px;
-  margin-bottom: 30px; }
-  .service-page-content .service-content-2 .service-inner-box:hover {
-    margin-top: 0; }
-  .service-page-content .service-content-2 .service-inner-box .service-icon i {
-    color: #8a2be2; }
-
-.about-service-page-section {
-  padding: 110px 0px;
-  background-color: #f9f9f9; }
-  .about-service-page-section .service-about-img {
-    top: 0;
-    left: 0; }
-  .about-service-page-section .about-right-text {
-    max-width: 570px;
-    float: right; }
-  .about-service-page-section .about-content-2 .about-right-text {
-    padding-top: 0; }
-  .about-service-page-section .about-content-2 .about-btn a:nth-child(1) {
-    background-color: #8a2be2; }
-
-.service-page-work-process {
-  z-index: 1;
-  padding: 110px 0px 0px 0px; }
-  .service-page-work-process .service-work-process-inner {
-    margin: 0 auto;
-    max-width: 1420px;
-    padding-bottom: 110px;
-    background-color: #ffffff; }
-  .service-page-work-process:after {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-    content: '';
-    height: 200px;
-    position: absolute;
-    background-color: #f9f9f9; }
-
-.service-price-section {
-  z-index: 1;
-  padding: 110px 0px 75px; }
-  .service-price-section:after {
-    top: 0;
-    z-index: -1;
-    content: '';
-    height: 60%;
-    width: 100%;
-    position: absolute;
-    background-color: #f9f9f9; }
-  .service-price-section .service-price-tab-btn {
-    right: 0;
-    top: -55px;
-    position: absolute; }
-    .service-price-section .service-price-tab-btn .nav {
-      display: inherit; }
-    .service-price-section .service-price-tab-btn .nav-tabs {
-      border-bottom: 0; }
-    .service-price-section .service-price-tab-btn .nav-tabs .nav-item {
-      margin-bottom: 0; }
-    .service-price-section .service-price-tab-btn .nav-tabs .nav-link {
-      padding: 0;
-      border: none;
-      height: 55px;
-      width: 100px;
-      border-radius: 0;
-      font-weight: 700;
-      line-height: 55px;
-      text-align: center;
-      font-family: "space-grotesk";
-      background-color: #ffffff; }
-      .service-price-section .service-price-tab-btn .nav-tabs .nav-link.active {
-        background-color: #8a2be2;
-        color: #ffffff; } */
-
-
-
-        /* Service Page Section */
-
-        /* Service Page Section */
 .service-page-section {
   padding: 120px 0 90px;
   background-color: #f9f9f9;
@@ -2719,7 +2738,8 @@ select:visited {
 /*---------------------------------------------------- */
 
 .eqp-page-section {
-  padding: 120px 0 90px;
+  padding: 100px 0px 100px;
+  z-index: 1; 
   background-color: #f9f9f9;
 }
 
@@ -2740,7 +2760,7 @@ select:visited {
 }
 
 .eqp-page-content .eqp-content-2 .eqp-inner-box img {
-  max-width: 750%; /* Reduce the image size */
+  max-width: 95%; /* Reduce the image size */
   height: auto;
   margin-bottom: 15px;
   border-radius: 10px;
