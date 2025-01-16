@@ -6015,3 +6015,120 @@ select:visited {
     display: none !important; } }
 
 /*---------------------------------------------------- */
+
+
+/* Base Styles */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Adds horizontal scroll for smaller screens */
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for the container */
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.styled-table thead tr {
+  background-color: #8a2be2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f5fa;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .styled-table th, .styled-table td {
+    font-size: 14px; /* Smaller font size for small screens */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .styled-table th, .styled-table td {
+    font-size: 12px; /* Further reduced font size for extra small screens */
+    padding: 8px;
+  }
+}
+
+/*----------------------graph------------------------------ */
+.chart-section{
+    padding-left: 25%;
+    z-index: 1; 
+    position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.chart-container {
+
+  border: 1px solid #007ACC;
+  padding: 20px;
+  background-color: #fff;
+  width: 600px;
+  text-align: center;
+}
+
+.chart-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.bar {
+  width: 15%;
+  background: linear-gradient(to top, #00aaff, #8a2be2);
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.labels span {
+  font-size: 14px;
+  color: #333;
+}
