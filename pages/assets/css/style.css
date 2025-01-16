@@ -6069,66 +6069,57 @@ select:visited {
 }
 
 /*----------------------graph------------------------------ */
-.chart-section{
-    padding-left: 25%;
-    z-index: 1; 
-    position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-
 .chart-container {
-
-  border: 1px solid #007ACC;
-  padding: 20px;
-  background-color: #fff;
-  width: 600px;
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.chart-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #000;
+.chart-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px; /* Match the height of the chart */
+  margin-right: 10px;
+}
+
+.y-axis span {
+  font-size: 12px;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .chart {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .bars {
   display: flex;
   align-items: flex-end;
-  justify-content: space-around;
-  height: 300px;
-  width: 100%;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  gap: 5px;
+  height: 200px; /* Adjust based on your desired height */
+  border-left: 2px solid #000;
   position: relative;
 }
 
 .bar {
-  width: 15%;
-  background: linear-gradient(to top, #00aaff, #8a2be2);
-  margin: 0 5px;
-  transition: all 0.3s ease;
-}
-
-.bar:hover {
-  opacity: 0.8;
+  width: 20px;
+  background-color: #007bff;
+  transition: height 0.3s ease;
 }
 
 .labels {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 10px;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
 .labels span {
-  font-size: 14px;
-  color: #333;
+  font-size: 12px;
+  text-align: center;
+  width: 20px;
 }
