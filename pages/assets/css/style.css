@@ -6069,20 +6069,37 @@ select:visited {
 }
 
 /*----------------------graph------------------------------ */
+
+
 .chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, sans-serif;
+  max-width: 90%; /* Prevent chart from overflowing on small screens */
+
+ padding-left: 20%;
+ padding-right: 20%;
+
+}
+
+.chart-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem; /* Adjust title size */
 }
 
 .chart-wrapper {
   display: flex;
   align-items: flex-end;
+  width: 100%;
 }
 
 .y-axis {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px; /* Match the height of the chart */
+  height: 200px; /* Default height */
   margin-right: 10px;
 }
 
@@ -6095,21 +6112,24 @@ select:visited {
 .chart {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .bars {
   display: flex;
   align-items: flex-end;
   gap: 5px;
-  height: 200px; /* Adjust based on your desired height */
+  height: 200px; /* Default height */
   border-left: 2px solid #000;
   position: relative;
+  width: 100%;
 }
 
 .bar {
-  width: 20px;
-  background-color: #007bff;
-  transition: height 0.3s ease;
+  flex: 1;
+  background: linear-gradient(180deg, #8a2ce2, #00c6ff);
+  transition: height 0.3s ease, background 0.3s ease;
+  border-radius: 4px;
 }
 
 .labels {
@@ -6121,5 +6141,59 @@ select:visited {
 .labels span {
   font-size: 12px;
   text-align: center;
-  width: 20px;
+  flex: 1;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 15px;
+  }
+
+  .chart-title {
+    font-size: 1rem;
+  }
+
+  .chart-wrapper {
+    flex-direction: row;
+    align-items: flex-start; /* Ensure proper alignment */
+  }
+
+  .y-axis {
+    height: 150px; /* Reduce height for smaller devices */
+    margin-right: 8px;
+  }
+
+  .y-axis span {
+    font-size: 10px; /* Smaller font for Y-axis labels */
+  }
+
+  .bars {
+    height: 150px; /* Reduce bar height */
+  }
+
+  .labels span {
+    font-size: 10px; /* Smaller font for labels */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .chart-wrapper {
+    flex-direction: row;
+  }
+
+  .y-axis {
+    height: 120px;
+    margin-right: 5px;
+  }
+
+  .bars {
+    height: 120px;
+  }
+
+  .y-axis span,
+  .labels span {
+    font-size: 9px; /* Further reduce font sizes for extra small screens */
+  }
 }
