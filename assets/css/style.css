@@ -414,16 +414,19 @@ select:visited {
 /*---------------------------------------------------- */
 /*(2)- Slider area*/
 /*----------------------------------------------------*/
-
+.archf-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 
 .archf-slider-social {
-  left: 90px;
+  left: 80px;
   z-index: 2;
   bottom: 90px;
   position: absolute;
 }
 .archf-slider-social a {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   margin-right: 15px;
 }
