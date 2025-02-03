@@ -4540,7 +4540,7 @@ select:visited {
     width: 50%;
     z-index: -1;
     content: '';
-    height: 100%;
+    height: 80%;
     position: absolute;
     background-image: url(../img/banner/fsbg.png); }
   .footer-style-three .footer-widget .footer-menu a,
@@ -4582,7 +4582,9 @@ select:visited {
 
 .copyright-content {
   font-weight: 700;
-  padding: 40px 0px 35px; }
+  padding: 40px 0px 35px;
+  z-index: 2; }
+ 
 
 .copyright-text-content span {
   color: #ffffff; }
