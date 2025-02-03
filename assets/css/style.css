@@ -1689,6 +1689,7 @@ select:visited {
   }
   .str-mobile_menu_button {
     display: block !important;
+    
   }
   .archf-blog-content .archf-blog-text-area {
     max-width: 100%;
@@ -1810,8 +1811,9 @@ select:visited {
 /*---------------------------------------------------- */
 /*(12)- Responsive area*/
 /*----------------------------------------------------*/
+
 .str-mobile_menu_content {
-  top: 0px;
+  top: 0;
   bottom: 0;
   right: -350px;
   height: 100vh;
