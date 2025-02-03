@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Service</title>
+	<title>Projects</title>
 	<link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon"> 
 	<meta name="author" content="">
 	<meta name="description" content="Trean - Design Works">
@@ -28,6 +28,7 @@
 	</div>
 
 <style>
+    
 	ul {
   
   margin: 0;
@@ -37,6 +38,76 @@
 .aline {
 	text-align: start;
 }
+
+.proj-section {
+    padding: 50px 0;
+    text-align: center;
+}
+.filter-buttons {
+    margin-bottom: 20px;
+}
+.filter-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #8a2be2;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: #cfbedf;
+}
+.proj-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: none;
+}
+.proj-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.proj-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 165, 0, 0.6);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.proj-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+}
+.proj-item:hover img {
+    transform: scale(1.05);
+}
+.proj-item:hover .overlay {
+    opacity: 1;
+}
+.proj-item:hover .proj-title {
+    opacity: 1;
+}
+
 </style>
 <!-- Start of header section
 	============================================= -->
@@ -71,32 +142,7 @@
 			</div>
 		</div>
 		<!-- / desktop menu -->
-		<div class="wide_side_inner">
-			<div class="side_overlay open_side_area"></div>
-			<div class="side_inner_content">
-				<div class="close_btn open_side_area"><i class="flaticon-close"></i></div>
-				<div class="arch-sidebar-text headline pera-content">
-					<div class="side_text_details">
-						<h3>About Us</h3>
-						<p>Information architecture helps organize content overall so it’s easy to find and use. Imagine a storeroom filled to the brim on with things.</p>
-					</div>
-					<div class="side_gallary clearfix">
-						<h3>Gallary</h3>
-						<div class="side_gallary_img">
-							<a href="!#"><img src="assets/img/instagram/ins1.jpg" alt=""></a>
-							<a href="!#"><img src="assets/img/instagram/ins2.jpg" alt=""></a>
-							<a href="!#"><img src="assets/img/instagram/ins3.jpg" alt=""></a>
-							<a href="!#"><img src="assets/img/instagram/ins4.jpg" alt=""></a>
-							<a href="!#"><img src="assets/img/instagram/ins5.jpg" alt=""></a>
-							<a href="!#"><img src="assets/img/instagram/ins6.jpg" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="side_copywrigh text-center">
-					Copyright By @ Trean<a href="#"></a>
-				</div>
-			</div>
-		</div>
+
 		<!-- /Side bar -->
 		<div class="str-mobile_menu relative-position">
 			<div class="str-mobile_menu_button str-open_mobile_menu">
@@ -131,20 +177,19 @@
 	</header>
 
 
-
-
 	<!-- End of header section
 	============================================= -->
+
 <!-- Start of breadcrumb section
 	============================================= -->
 	<section id="breadcrumb" class="breadcrumb-section" data-background="assets/img/banner/brbg.jpg">
 		<div class="container">
 			<div class="breadcrumb-content text-center headline">
-				<h2 class="breadcrumb-title"> Get In Touch</h2>
+				<h2 class="breadcrumb-title">Projects</h2>
 				<div class="breadcrumb_item ul-li">
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active">Contact</li>
+						<li class="breadcrumb-item active">Projects</li>
 					</ul>
 				</div>
 			</div>
@@ -153,77 +198,104 @@
 <!-- End of breadcrumb section
 	============================================= -->
 
-<!-- Start of contact content section
-	============================================= -->
 
-<!-- End of Contact content section
-	============================================= -->
 
-<!-- Start of Get Quote  section
+<!-- Start of Projects section
 	============================================= -->
-	<section id="get-quote" class="get-quote-section contact-page-get-quote position-relative">
-		<div class="container">
-			<div class="get-quote-content">
-				<div class="section-title title-center text-center position-relative headline">
-					<span class="title-tag">Input your Details</span>
-					<h2>Form</h2>
-				</div>
-				<div class="get-quote-form">
-					<form id="contact_form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
-						<div class="row">
-							<div class="col-md-6">
-								<input type="hidden" name="access_key" value="3536e71b-1551-4f0e-a362-53de79f17f54">
-								<div class="contact-info">
-									<input class="email" name="name" type="text" placeholder="Your full name">
-									<div class="icon-bg">
-										<i class="far fa-user"></i>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="contact-info">
-									<input class="name" name="email" type="email" placeholder="Enter email address">
-									<div class="icon-bg">
-										<i class="far fa-envelope"></i>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="contact-info">
-									<input class="name" name="phone" type="text" placeholder="Add phone number">
-									<div class="icon-bg">
-										<i class="fas fa-phone"></i>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="contact-info">
-									<input class="name" name="subject" type="subject" placeholder="Select Subject">
-									<div class="icon-bg">
-										<i class="far fa-file-alt"></i>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="contact-info">
-									<textarea id="message" name="message"  placeholder="Enter messages"></textarea>
-									<div class="icon-bg">
-										<i class="far fa-edit"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="sub-button text-center">
-							<input type="hidden" name="redirect" value="https://web3forms.com/success">
-							<button type="submit" value="Submit">Get Free Consultancy</button>
-						</div> 
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- End of Get Quote  section
-	============================================= -->
+    <section id="proj" class="proj-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="category1">Airport</button>
+                <button class="filter-btn" data-filter="category2">Banquet</button>
+                <button class="filter-btn" data-filter="category3">Foot-Track</button>
+                <button class="filter-btn" data-filter="category4">Residential Interior</button>
+                <button class="filter-btn" data-filter="category5">Road Cover</button>
+                <button class="filter-btn" data-filter="category6">Resa</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4 proj-item category1">
+                    <a href="/projects/project-airport.html" class="proj-link">
+                        <div class="overlay"></div>
+                        <img src="/img/airportcover.jpg" alt="Airport">
+                        <h3 class="proj-title">Airport</h3>
+                    </a>
+                </div>
+                <div class="col-md-4 proj-item category2">
+                    <a href="/projects/banquet.html" class="proj-link">
+                        <div class="overlay"></div>
+                        <img src="/img/banquetcover.png" alt="Banquet">
+                        <h3 class="proj-title">banquet</h3>
+                    </a>
+                </div>
+                <div class="col-md-4 proj-item category3">
+                    <a href="/projects/foot-track.html" class="proj-link">
+                        <div class="overlay"></div>
+                        <img src="/img/footcover.jpg" alt="Foot-Track">
+                        <h3 class="proj-title">Foot-Track</h3>
+                    </a>
+                </div>
+                <div class="col-md-4 proj-item category4">
+                    <a href="/projects/residential_interior.html" class="proj-link">
+                        <div class="overlay"></div>
+                        <img src="/img/interior.jpg" alt="Residential Interior">
+                        <h3 class="proj-title">Residential Interior</h3>
+                    </a>
+                </div>
+                <div class="col-md-4 proj-item category5">
+                    <a href="/projects/road.html" class="proj-link">
+                        <div class="overlay"></div>
+                        <img src="/img/footcover.jpg" alt="Road Cover">
+                        <h3 class="proj-title">Road Cover</h3>
+                    </a>
+                </div>
+                <div class="col-md-4 proj-item category6">
+                    <a href="/projects/resa.html" class="proj-link">
+                        <div class="overlay"></div>
+                        <img src="/img/resa.jpg" alt="Resa">
+                        <h3 class="proj-title">Resa</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const projects = document.querySelectorAll(".proj-item");
+        
+            function filterProjects(category) {
+                projects.forEach(project => {
+                    if (category === "all" || project.classList.contains(category)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            }
+        
+            filterButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    document.querySelector(".filter-btn.active").classList.remove("active");
+                    this.classList.add("active");
+                    filterProjects(this.getAttribute("data-filter"));
+                });
+            });
+        
+            filterProjects("all");
+        });
+        </script>
+
+
+
+    
+
+
+	<!--End of Projects section
+	 ============================================= -->
+
+
 
 <!-- Start of footer  section
 	============================================= -->		
@@ -305,6 +377,8 @@
 	</footer>
 <!-- End of footer  section
 	============================================= -->		
+  
+
 
 	<!-- For Js Library -->
 	<script src="./assets/js/project.js"></script>
