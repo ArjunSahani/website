@@ -1520,10 +1520,10 @@ select:visited {
 
 .archf-copyright-content {
   color: #fff;
-  padding: 40px 0px 35px;
+  padding: 65px 0px 45px;
 }
-.archf-copyright-content .copyright-text a {
-  font-weight: 700;
+.archf- .copyright-text a {
+  font-weight: 500;
 }
 .archf-copyright-content .copyright-social a {
   margin: 0px 5px;
@@ -1535,6 +1535,7 @@ select:visited {
   text-align: right;
 }
 .archf-copyright-content .copyright-menu li {
+  
   margin-left: 40px;
 }
 .archf-copyright-content .copyright-menu li:nth-child(1) {
