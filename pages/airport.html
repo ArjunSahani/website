@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Projects</title>
+	<title>Projects-Airport</title>
 	<link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon"> 
 	<meta name="author" content="">
 	<meta name="description" content="Trean - Design Works">
@@ -19,79 +19,107 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/video.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
 
 	<style>
-    
-		.proj-section {
-			padding: 50px 0;
-			text-align: center;
-		}
-		.filter-buttons {
-			margin-bottom: 20px;
-		}
-		.filter-btn {
-			padding: 10px 15px;
-			margin: 5px;
-			border: none;
-			background: #8a2be2;
-			color: white;
-			cursor: pointer;
-			border-radius: 5px;
-			transition: background 0.3s;
-		}
-		.filter-btn.active, .filter-btn:hover {
-			background: #cfbedf;
-		}
-		.proj-item {
-			position: relative;
-			margin-bottom: 30px;
-			overflow: hidden;
-			display: none;
-		}
-		.proj-item img {
-			width: 100%;
-			border-radius: 10px;
-			transition: transform 0.3s ease-in-out;
-		}
-		.proj-link {
-			position: relative;
-			display: block;
-			text-decoration: none;
-			color: #fff;
-		}
-		.overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(255, 165, 0, 0.6);
-			border-radius: 10px;
-			opacity: 0;
-			transition: opacity 0.3s ease-in-out;
-		}
-		.proj-title {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 20px;
-			font-weight: bold;
-			opacity: 0;
-			transition: opacity 0.3s ease-in-out;
-			color: white;
-		}
-		.proj-item:hover img {
-			transform: scale(1.05);
-		}
-		.proj-item:hover .overlay {
-			opacity: 1;
-		}
-		.proj-item:hover .proj-title {
-			opacity: 1;
-		}
-		
-		</style>
+		/* Full-screen wrapper to center the container */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full screen height */
+  width: 100%  /* Full screen width */
+  
+}
+
+/* Main container */
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  max-width: 1200px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+      .project-img {
+          width: 100%;
+          height: 40vh;
+          background: url(/img/slider/air1.jpg) no-repeat center center/cover;
+          border-radius: 10px;
+      }
+      .content {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          gap: 20px;
+      }
+      .overview, .details {
+          flex: 1;
+          min-width: 320px;
+          padding: 25px;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .overview {
+          background: linear-gradient(135deg, #f4f4f4, #e2e2e2);
+      }
+      .details {
+          background: linear-gradient(135deg, #e8e8e8, #d4d4d4);
+      }
+      h2 {
+          margin-bottom: 10px;
+          color: #333;
+      }
+      p {
+          color: #555;
+          line-height: 1.6;
+      }
+      @media (max-width: 768px) {
+          .content {
+              flex-direction: column;
+          }
+      }
+
+      .project-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #e7e7e7;
+        padding-bottom: 20px;
+      }
+      
+      .project-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        font-size: 16px;
+        color: #555;
+        border-bottom: 1px solid #ddd; /* Light separator */
+      }
+      
+      .project-list li:last-child {
+        border-bottom: none; /* Remove border from last item */
+      }
+      
+      /* Styling for strong (labels) */
+      .project-list strong {
+        font-weight: 700;
+        color: #333;
+      }
+      
+      /* Responsive fix: Stack list items on smaller screens */
+      @media (max-width: 768px) {
+        .project-list li {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      
+	</style>
 </head>
 
 <body>
@@ -167,8 +195,6 @@
 		</div>
 		<!-- /mobile-menu -->
 	</header>
-
-
 	<!-- End of header section
 	============================================= -->
 
@@ -177,11 +203,11 @@
 	<section id="breadcrumb" class="breadcrumb-section" data-background="assets/img/banner/brbg.jpg">
 		<div class="container">
 			<div class="breadcrumb-content text-center headline">
-				<h2 class="breadcrumb-title">Projects</h2>
+				<h2 class="breadcrumb-title">Airport</h2>
 				<div class="breadcrumb_item ul-li">
 					<ul class="breadcrumb">
-						<li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-						<li class="breadcrumb-item active">Projects</li>
+						<li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+						<li class="breadcrumb-item active">Airport</li>
 					</ul>
 				</div>
 			</div>
@@ -191,101 +217,44 @@
 	============================================= -->
 
 
+	<body>
+		<br>
+		<div class="col-xs-12">
+			<div class="wrapper">
+				<div class="container1">
+					<div class="project-img"></div>
+					<br>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<h3>Project Details</h3>
+							<!-- project list of the page -->
+							<ul class="project-list list-unstyled">
+								<li>Name of the project: <strong>Construction of new Green field Airport</strong></li>
+							<li>Department: <strong>Airports Authority of India</strong></li>
+							<li>Location: <strong>Holongi, Itanagar, Arunachal Pradesh</strong></li>
+							<!--<li>Surface Area: <strong>50000 m2</strong></li>-->
+							<li>Year/Date: <strong>22/06/2021</strong></li>
+							<li>Value: <strong>156,28,37827.00</strong></li>
+							<li>Work status: <strong style="color: green;">In Progress</strong></li>
 
-<!-- Start of Projects section
-	============================================= -->
-    <section id="proj" class="proj-section">
-        <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="category1">Airport</button>
-                <button class="filter-btn" data-filter="category2">Banquet</button>
-                <button class="filter-btn" data-filter="category3">Foot-Track</button>
-                <button class="filter-btn" data-filter="category4">Residential Interior</button>
-                <button class="filter-btn" data-filter="category5">Road Cover</button>
-                <button class="filter-btn" data-filter="category6">Resa</button>
-            </div>
-            <div class="row">
-                <div class="col-md-4 proj-item category1">
-                    <a href="/pages/airport.html" class="proj-link">
-                        <div class="overlay"></div>
-                        <img src="/img/airportcover.jpg" alt="Airport">
-                        <h3 class="proj-title">Airport</h3>
-                    </a>
-                </div>
-                <div class="col-md-4 proj-item category2">
-                    <a href="/pages/banquet.html" class="proj-link">
-                        <div class="overlay"></div>
-                        <img src="/img/banquetcover.png" alt="Banquet">
-                        <h3 class="proj-title">banquet</h3>
-                    </a>
-                </div>
-                <div class="col-md-4 proj-item category3">
-                    <a href="/pages/foot.html" class="proj-link">
-                        <div class="overlay"></div>
-                        <img src="/img/footcover.jpg" alt="Foot-Track">
-                        <h3 class="proj-title">Foot-Track</h3>
-                    </a>
-                </div>
-                <div class="col-md-4 proj-item category4">
-                    <a href="/pages/residential_interior.html" class="proj-link">
-                        <div class="overlay"></div>
-                        <img src="/img/interior.jpg" alt="Residential Interior">
-                        <h3 class="proj-title">Residential Interior</h3>
-                    </a>
-                </div>
-                <div class="col-md-4 proj-item category5">
-                    <a href="/pages/road.html" class="proj-link">
-                        <div class="overlay"></div>
-                        <img src="/img/footcover.jpg" alt="Road Cover">
-                        <h3 class="proj-title">Road Cover</h3>
-                    </a>
-                </div>
-                <div class="col-md-4 proj-item category6">
-                    <a href="/pages/resa.html" class="proj-link">
-                        <div class="overlay"></div>
-                        <img src="/img/resa.jpg" alt="Resa">
-                        <h3 class="proj-title">Resa</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const filterButtons = document.querySelectorAll(".filter-btn");
-            const projects = document.querySelectorAll(".proj-item");
-        
-            function filterProjects(category) {
-                projects.forEach(project => {
-                    if (category === "all" || project.classList.contains(category)) {
-                        project.style.display = "block";
-                    } else {
-                        project.style.display = "none";
-                    }
-                });
-            }
-        
-            filterButtons.forEach(button => {
-                button.addEventListener("click", function () {
-                    document.querySelector(".filter-btn.active").classList.remove("active");
-                    this.classList.add("active");
-                    filterProjects(this.getAttribute("data-filter"));
-                });
-            });
-        
-            filterProjects("all");
-        });
-        </script>
+							<li>Remarks: <strong>82% physical progress</strong></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<h3>Project Overview</h3>
+							<p>
+                                The project entails the Phase-II development of the New Greenfield Airport at Hollongi, Itanagar, Arunachal Pradesh, focusing on city-side and air-side infrastructure. Scope includes the detailed design, engineering, and construction of the terminal building, ATC tower, fire station, residential complex, and ancillary facilities like E&M workshop, medical center, and landscaping. It integrates civil, electrical, plumbing, HVAC, IT systems, and maintenance for 7 years, ensuring operational efficiency and sustainability within a 15-month timeline, including monsoon adjustments. <br>
+                                </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+		
+</body>
 
 
-
-    
-
-
-	<!--End of Projects section
-	 ============================================= -->
 
 
 
